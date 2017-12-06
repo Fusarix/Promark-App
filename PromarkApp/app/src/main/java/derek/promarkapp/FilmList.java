@@ -12,6 +12,7 @@ public class FilmList extends AppCompatActivity implements
         TextView.OnEditorActionListener, View.OnClickListener {
 
     private Button rs20;
+    private Button sb20;
     private Button backToMain;
 
     @Override
@@ -23,21 +24,26 @@ public class FilmList extends AppCompatActivity implements
                 findViewById(R.id.btnRS20);
         backToMain = (Button)
                 findViewById(R.id.btnBack);
+        sb20 = (Button)
+                findViewById(R.id.btnSB20);
 
         backToMain.setOnClickListener(this);
         rs20.setOnClickListener(this);
+        sb20.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.btnRS20) {
             setContentView(R.layout.activity_rs20_page);
-            Intent filmSpecs = new Intent(FilmList.this, RS20Page.class);
-            startActivity(filmSpecs);
+            Intent rs20 = new Intent(FilmList.this, RS20Page.class);
+            startActivity(rs20);
         }
         else if(view.getId() == R.id.btnSB20)
         {
-
+            setContentView(R.layout.activity_sb20_page);
+            Intent sb20 = new Intent(FilmList.this, SB20Page.class);
+            startActivity(sb20);
         }
         else if(view.getId()== R.id.btnBack){
             setContentView(R.layout.activity_navigation_page);
