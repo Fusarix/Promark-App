@@ -24,7 +24,8 @@
         <activity android:name=".DealerLogin" />
         <activity android:name=".FilmList" />
         <activity android:name=".NavigationPage" />
-        <activity android:name=".RS20Page"></activity>
+        <activity android:name=".RS20Page" />
+        <activity android:name=".SB20Page"></activity>
     </application>
 
 </manifest>
