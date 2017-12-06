@@ -35,6 +35,10 @@ public class FilmList extends AppCompatActivity implements
             Intent filmSpecs = new Intent(FilmList.this, RS20Page.class);
             startActivity(filmSpecs);
         }
+        else if(view.getId() == R.id.btnSB20)
+        {
+
+        }
         else if(view.getId()== R.id.btnBack){
             setContentView(R.layout.activity_navigation_page);
             Intent nav = new Intent(FilmList.this, NavigationPage.class);
