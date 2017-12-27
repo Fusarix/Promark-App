@@ -16,6 +16,8 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 import android.app.Activity;
+import android.widget.Toast;
+
 import java.util.Objects;
 import java.util.List;
 
@@ -55,35 +57,17 @@ public class MainPage extends AppCompatActivity implements OnClickListener, OnEd
 
         if(v.getId() == R.id.btnStart){
             if(Objects.equals(name, "")){
-                AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setTitle("Error");
-                builder.setMessage("Please enter your first name.");
-
-                builder.setPositiveButton("OK", null);
-
-                AlertDialog dialog = builder.create();
-                dialog.show();
+                Toast.makeText(getApplicationContext(), "Please enter your first name",
+                        Toast.LENGTH_SHORT).show();
             }
             if(Objects.equals(last, "")){
-                AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setTitle("Error");
-                builder.setMessage("Please enter your last name.");
-
-                builder.setPositiveButton("OK", null);
-
-                AlertDialog dialog = builder.create();
-                dialog.show();
+                Toast.makeText(getApplicationContext(), "Please enter your last name",
+                        Toast.LENGTH_SHORT).show();
             }
             else{
 
-                AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setTitle("Welcome");
-                builder.setMessage("Welcome to our promark application, " + name + " " + last);
-
-                builder.setPositiveButton("OK", null);
-
-                AlertDialog dialog = builder.create();
-                dialog.show();
+                Toast.makeText(getApplicationContext(), "Welcome to our application, " + name + " " + last,
+                        Toast.LENGTH_SHORT).show();
 
                 setContentView(R.layout.activity_film_list);
                 Intent filmList = new Intent(MainPage.this, FilmList.class);

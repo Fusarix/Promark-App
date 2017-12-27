@@ -25,7 +25,7 @@ public class SB20Page extends AppCompatActivity implements View.OnClickListener,
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rs20_page);
+        setContentView(R.layout.activity_sb20_page);
 
         txtfilmName = (TextView)
                 findViewById(R.id.txtFilmName);

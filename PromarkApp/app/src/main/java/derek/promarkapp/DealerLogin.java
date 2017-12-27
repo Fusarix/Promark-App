@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
+import android.widget.Toast;
 
 import java.util.Objects;
 
@@ -52,14 +53,8 @@ public class DealerLogin extends AppCompatActivity implements
         if (v.getId() == R.id.btnLogin) {
             if ((Objects.equals(userText, "lukerduker99")) && (Objects.equals(passText, "password"))) {
 
-                AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setTitle("Login Successful");
-                builder.setMessage("Welcome Luke.");
-
-                builder.setPositiveButton("OK", null);
-
-                AlertDialog dialog = builder.create();
-                dialog.show();
+                Toast.makeText(getApplicationContext(), "Login Successful",
+                        Toast.LENGTH_SHORT).show();
 
                 setContentView(R.layout.activity_navigation_page);
                 Intent dealerLogin = new Intent(DealerLogin.this, NavigationPage.class);
@@ -68,14 +63,8 @@ public class DealerLogin extends AppCompatActivity implements
             }
             else {
 
-                AlertDialog.Builder builder = new AlertDialog.Builder(this);
-                builder.setTitle("Login Not Successful");
-                builder.setMessage("Please enter a correct username / password");
-
-                builder.setPositiveButton("OK", null);
-
-                AlertDialog dialog = builder.create();
-                dialog.show();
+                Toast.makeText(getApplicationContext(), "Login Unsuccessful",
+                        Toast.LENGTH_SHORT).show();
             }
         }
     }
