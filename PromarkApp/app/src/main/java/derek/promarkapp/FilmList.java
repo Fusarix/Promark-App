@@ -13,6 +13,7 @@ public class FilmList extends AppCompatActivity implements
 
     private Button rs20;
     private Button sb20;
+    private Button cl800;
     private Button backToMain;
 
     @Override
@@ -26,10 +27,13 @@ public class FilmList extends AppCompatActivity implements
                 findViewById(R.id.btnBack);
         sb20 = (Button)
                 findViewById(R.id.btnSB20);
+        cl800 = (Button)
+                findViewById(R.id.btnCL800);
 
         backToMain.setOnClickListener(this);
         rs20.setOnClickListener(this);
         sb20.setOnClickListener(this);
+        cl800.setOnClickListener(this);
     }
 
     @Override
@@ -44,11 +48,17 @@ public class FilmList extends AppCompatActivity implements
             setContentView(R.layout.activity_sb20_page);
             Intent sb20 = new Intent(FilmList.this, SB20Page.class);
             startActivity(sb20);
-        }
-        else if(view.getId()== R.id.btnBack){
-            setContentView(R.layout.activity_navigation_page);
-            Intent nav = new Intent(FilmList.this, NavigationPage.class);
-            startActivity(nav);
+        } else if (view.getId() == R.id.btnCL800) {
+            setContentView(R.layout.activity_cl800);
+            Intent cl800 = new Intent(FilmList.this, CL800.class);
+            startActivity(cl800);
+
+        } else {
+            if (view.getId() == R.id.btnBack) {
+                setContentView(R.layout.activity_navigation_page);
+                Intent nav = new Intent(FilmList.this, NavigationPage.class);
+                startActivity(nav);
+            }
         }
 
     }

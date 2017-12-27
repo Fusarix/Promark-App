@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context="derek.promarkapp.CL800"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <ImageView
+        android:id="@+id/imgcl800"
+        android:layout_width="0dp"
+        android:layout_height="155dp"
+        app:srcCompat="@drawable/cl800"
+        android:layout_marginEnd="58dp"
+        android:layout_marginStart="58dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/txtTotalSolarEnery"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="54dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtFilmName"
+        android:layout_marginLeft="58dp"
+        android:layout_marginRight="58dp" />
+
+    <TextView
+        android:id="@+id/txtFilmName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:text="TextView"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtVisibleLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35px"
+        android:text="Visible Light: Transmitted, Reflected (%)"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBackToList"
+        android:layout_marginTop="153dp"
+        app:layout_constraintTop_toBottomOf="@+id/imgSB20"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="152dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/txtTseAbsorbed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:text="TextView"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtTseReflected"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/txtTseReflected"
+        android:layout_marginLeft="49dp" />
+
+    <TextView
+        android:id="@+id/txtTotalSolarEnery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28px"
+        android:text="Total Solar Energy: Transmitted, Reflected, Absorbed (%)"
+        android:layout_marginEnd="1dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="256dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="1dp" />
+
+    <TextView
+        android:id="@+id/txtTseReflected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:text="TextView"
+        android:layout_marginStart="23dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="28dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotalSolarEnery"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/txtTseTransmitted"
+        android:layout_marginLeft="23dp" />
+
+    <TextView
+        android:id="@+id/txtTseTransmitted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:text="TextView"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtTseReflected"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <TextView
+        android:id="@+id/txtVlReflected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:text="TextView"
+        android:layout_marginStart="23dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtVisibleLight"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/txtVlTransmitted"
+        android:layout_marginLeft="23dp" />
+
+    <TextView
+        android:id="@+id/txtVlTransmitted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:text="TextView"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtVlReflected"
+        tools:layout_constraintBaseline_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
+
+    <Button
+        android:id="@+id/btnBackToList"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:text="Back to Film List"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="19dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp" />
+</android.support.constraint.ConstraintLayout>
