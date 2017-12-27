@@ -12,6 +12,7 @@ public class NavigationPage extends AppCompatActivity implements
         TextView.OnEditorActionListener, View.OnClickListener {
 
     private Button filmList;
+    private Button contactUs;
     private Button backToLogin;
 
     @Override
@@ -21,10 +22,13 @@ public class NavigationPage extends AppCompatActivity implements
 
         filmList = (Button)
                     findViewById(R.id.btnFilmList);
+        contactUs = (Button)
+                    findViewById(R.id.btnEmail);
         backToLogin = (Button)
                     findViewById(R.id.btnBacktoLogin);
 
         filmList.setOnClickListener(this);
+        contactUs.setOnClickListener(this);
         backToLogin.setOnClickListener(this);
 
     }
@@ -35,6 +39,11 @@ public class NavigationPage extends AppCompatActivity implements
             setContentView(R.layout.activity_film_list);
             Intent dealerLogin = new Intent(NavigationPage.this, FilmList.class);
             startActivity(dealerLogin);
+        }
+        else if(view.getId() == R.id.btnEmail) {
+            Intent emailIntent = new Intent(Intent.ACTION_SEND);
+            emailIntent.setType("text/plain");
+            startActivity(emailIntent);
         }
         else if(view.getId() == R.id.btnBacktoLogin){
             setContentView(R.layout.activity_main_page);
