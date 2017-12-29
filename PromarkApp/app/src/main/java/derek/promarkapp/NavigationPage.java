@@ -13,6 +13,7 @@ public class NavigationPage extends AppCompatActivity implements
 
     private Button filmList;
     private Button contactUs;
+    private Button gallery;
     private Button backToLogin;
 
     @Override
@@ -24,11 +25,14 @@ public class NavigationPage extends AppCompatActivity implements
                     findViewById(R.id.btnFilmList);
         contactUs = (Button)
                     findViewById(R.id.btnEmail);
+        gallery = (Button)
+                    findViewById(R.id.btnGallery);
         backToLogin = (Button)
                     findViewById(R.id.btnBacktoLogin);
 
         filmList.setOnClickListener(this);
         contactUs.setOnClickListener(this);
+        gallery.setOnClickListener(this);
         backToLogin.setOnClickListener(this);
 
     }
@@ -44,6 +48,11 @@ public class NavigationPage extends AppCompatActivity implements
             Intent emailIntent = new Intent(Intent.ACTION_SEND);
             emailIntent.setType("text/plain");
             startActivity(emailIntent);
+        }
+        else if(view.getId() == R.id.btnGallery){
+            setContentView(R.layout.activity_photo_gallery);
+            Intent gallery = new Intent(NavigationPage.this, PhotoGallery.class);
+            startActivity(gallery);
         }
         else if(view.getId() == R.id.btnBacktoLogin){
             setContentView(R.layout.activity_main_page);

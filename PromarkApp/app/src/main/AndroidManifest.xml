@@ -26,7 +26,8 @@
         <activity android:name=".NavigationPage" />
         <activity android:name=".RS20Page" />
         <activity android:name=".SB20Page" />
-        <activity android:name=".CL800"></activity>
+        <activity android:name=".CL800" />
+        <activity android:name=".PhotoGallery"></activity>
     </application>
 
 </manifest>
