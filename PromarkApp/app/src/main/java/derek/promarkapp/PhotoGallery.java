@@ -1,5 +1,6 @@
 package derek.promarkapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -59,11 +60,17 @@ public class PhotoGallery extends AppCompatActivity implements
         ListView androidListView = (ListView) findViewById(R.id.listView);
         androidListView.setAdapter(simpleAdapter);
 
+        backButton.setOnClickListener(this);
+
     }
 
     @Override
     public void onClick(View view) {
-
+            if(view.getId() == R.id.btnBackToMenu){
+                setContentView(R.layout.activity_navigation_page);
+                Intent menu = new Intent(PhotoGallery.this, NavigationPage.class);
+                startActivity(menu);
+            }
     }
 
     @Override

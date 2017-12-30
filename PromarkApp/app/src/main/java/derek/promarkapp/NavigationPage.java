@@ -14,6 +14,7 @@ public class NavigationPage extends AppCompatActivity implements
     private Button filmList;
     private Button contactUs;
     private Button gallery;
+    private Button filmTimer;
     private Button backToLogin;
 
     @Override
@@ -27,9 +28,12 @@ public class NavigationPage extends AppCompatActivity implements
                     findViewById(R.id.btnEmail);
         gallery = (Button)
                     findViewById(R.id.btnGallery);
+        filmTimer = (Button)
+                    findViewById(R.id.btnTimer);
         backToLogin = (Button)
                     findViewById(R.id.btnBacktoLogin);
 
+        filmTimer.setOnClickListener(this);
         filmList.setOnClickListener(this);
         contactUs.setOnClickListener(this);
         gallery.setOnClickListener(this);
@@ -53,6 +57,11 @@ public class NavigationPage extends AppCompatActivity implements
             setContentView(R.layout.activity_photo_gallery);
             Intent gallery = new Intent(NavigationPage.this, PhotoGallery.class);
             startActivity(gallery);
+        }
+        else if(view.getId() == R.id.btnTimer){
+            setContentView(R.layout.activity_timer);
+            Intent timer = new Intent(NavigationPage.this, Timer.class);
+            startActivity(timer);
         }
         else if(view.getId() == R.id.btnBacktoLogin){
             setContentView(R.layout.activity_main_page);
