@@ -59,8 +59,8 @@ public class NavigationPage extends AppCompatActivity implements
             startActivity(gallery);
         }
         else if(view.getId() == R.id.btnTimer){
-            setContentView(R.layout.activity_timer);
-            Intent timer = new Intent(NavigationPage.this, Timer.class);
+            setContentView(R.layout.activity_image_download);
+            Intent timer = new Intent(NavigationPage.this, ImageDownload.class);
             startActivity(timer);
         }
         else if(view.getId() == R.id.btnBacktoLogin){

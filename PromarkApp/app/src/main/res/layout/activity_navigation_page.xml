@@ -31,7 +31,7 @@
         android:layout_width="0dp"
         android:layout_height="136dp"
         android:background="@android:color/holo_blue_dark"
-        android:text="Film Timer"
+        android:text="Download Logo"
         tools:layout_constraintRight_creator="1"
         app:layout_constraintRight_toRightOf="@+id/btnFilmList"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnEmail"
