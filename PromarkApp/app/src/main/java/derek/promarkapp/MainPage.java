@@ -69,8 +69,8 @@ public class MainPage extends AppCompatActivity implements OnClickListener, OnEd
                 Toast.makeText(getApplicationContext(), "Welcome to our application, " + name + " " + last,
                         Toast.LENGTH_SHORT).show();
 
-                setContentView(R.layout.activity_film_list);
-                Intent filmList = new Intent(MainPage.this, FilmList.class);
+                setContentView(R.layout.activity_navigation_page);
+                Intent filmList = new Intent(MainPage.this, NavigationPage.class);
                 startActivity(filmList);
             }
         }

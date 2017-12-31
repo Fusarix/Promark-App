@@ -56,7 +56,7 @@ public class ImageDownload extends AppCompatActivity {
             super.onPreExecute();
 
             mProgressDialog = new ProgressDialog(ImageDownload.this);
-            mProgressDialog.setTitle("Download Image Tutorial");
+            mProgressDialog.setTitle("Downloading Image");
             mProgressDialog.setMessage("Loading...");
             mProgressDialog.setIndeterminate(false);
             mProgressDialog.show();

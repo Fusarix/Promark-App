@@ -7,6 +7,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class NavigationPage extends AppCompatActivity implements
         TextView.OnEditorActionListener, View.OnClickListener {
@@ -49,6 +50,10 @@ public class NavigationPage extends AppCompatActivity implements
             startActivity(dealerLogin);
         }
         else if(view.getId() == R.id.btnEmail) {
+
+            Toast.makeText(getApplicationContext(), "Email us at: luke@promark.ca",
+                    Toast.LENGTH_SHORT).show();
+
             Intent emailIntent = new Intent(Intent.ACTION_SEND);
             emailIntent.setType("text/plain");
             startActivity(emailIntent);
