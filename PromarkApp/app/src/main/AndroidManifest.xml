@@ -29,7 +29,8 @@
         <activity android:name=".SB20Page" />
         <activity android:name=".CL800" />
         <activity android:name=".PhotoGallery" />
-        <activity android:name=".ImageDownload"></activity>
+        <activity android:name=".ImageDownload" />
+        <activity android:name=".FindUs"></activity>
     </application>
 
 </manifest>

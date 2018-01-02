@@ -1,6 +1,7 @@
 package derek.promarkapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -17,6 +18,7 @@ public class NavigationPage extends AppCompatActivity implements
     private Button gallery;
     private Button filmTimer;
     private Button backToLogin;
+    private Button findUs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +33,15 @@ public class NavigationPage extends AppCompatActivity implements
                     findViewById(R.id.btnGallery);
         filmTimer = (Button)
                     findViewById(R.id.btnTimer);
+        findUs = (Button)
+                    findViewById(R.id.btnFindUs);
         backToLogin = (Button)
                     findViewById(R.id.btnBacktoLogin);
 
         filmTimer.setOnClickListener(this);
         filmList.setOnClickListener(this);
         contactUs.setOnClickListener(this);
+        findUs.setOnClickListener(this);
         gallery.setOnClickListener(this);
         backToLogin.setOnClickListener(this);
 
@@ -67,6 +72,11 @@ public class NavigationPage extends AppCompatActivity implements
             setContentView(R.layout.activity_image_download);
             Intent timer = new Intent(NavigationPage.this, ImageDownload.class);
             startActivity(timer);
+        }
+        else if(view.getId() == R.id.btnFindUs){
+            setContentView(R.layout.activity_find_us);
+            Intent find = new Intent(NavigationPage.this, FindUs.class);
+            startActivity(find);
         }
         else if(view.getId() == R.id.btnBacktoLogin){
             setContentView(R.layout.activity_main_page);
