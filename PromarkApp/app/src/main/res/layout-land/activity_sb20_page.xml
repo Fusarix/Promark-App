@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    tools:context="derek.promarkapp.SB20Page"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <ImageView
+        android:id="@+id/imgSB20"
+        android:layout_width="0dp"
+        android:layout_height="155dp"
+        app:srcCompat="@drawable/sb20"
+        android:layout_marginEnd="58dp"
+        android:layout_marginStart="58dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="-7dp" />
+
+    <TextView
+        android:id="@+id/txtFilmName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:text="TextView"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="355dp" />
+
+    <TextView
+        android:id="@+id/txtVisibleLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35px"
+        android:text="Visible Light: Transmitted, Reflected (%)"
+        android:layout_marginStart="16dp"
+        tools:layout_editor_absoluteY="208dp"
+        tools:layout_editor_absoluteX="233dp" />
+
+    <TextView
+        android:id="@+id/txtTseAbsorbed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:text="TextView"
+        tools:layout_editor_absoluteY="117dp"
+        tools:layout_editor_absoluteX="474dp" />
+
+    <TextView
+        android:id="@+id/txtTotalSolarEnery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="28px"
+        android:text="Total Solar Energy: Transmitted, Reflected, Absorbed (%)"
+        android:layout_marginEnd="1dp"
+        tools:layout_editor_absoluteY="67dp"
+        tools:layout_editor_absoluteX="233dp" />
+
+    <TextView
+        android:id="@+id/txtTseReflected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:text="TextView"
+        android:layout_marginStart="23dp"
+        tools:layout_editor_absoluteY="117dp"
+        tools:layout_editor_absoluteX="355dp" />
+
+    <TextView
+        android:id="@+id/txtTseTransmitted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:text="TextView"
+        android:layout_marginStart="16dp"
+        tools:layout_editor_absoluteY="117dp"
+        tools:layout_editor_absoluteX="233dp" />
+
+    <TextView
+        android:id="@+id/txtVlReflected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:text="TextView"
+        android:layout_marginStart="23dp"
+        tools:layout_editor_absoluteY="264dp"
+        tools:layout_editor_absoluteX="355dp" />
+
+    <TextView
+        android:id="@+id/txtVlTransmitted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:text="TextView"
+        android:layout_marginStart="16dp"
+        tools:layout_editor_absoluteY="264dp"
+        tools:layout_editor_absoluteX="233dp" />
+
+    <Button
+        android:id="@+id/btnBackToList"
+        android:layout_width="130dp"
+        android:layout_height="104dp"
+        android:text="Back to Film List"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="19dp"
+        tools:layout_editor_absoluteY="208dp"
+        tools:layout_editor_absoluteX="55dp" />
+</android.support.constraint.ConstraintLayout>

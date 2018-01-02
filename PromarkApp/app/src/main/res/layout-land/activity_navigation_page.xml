@@ -11,64 +11,62 @@
 
     <Button
         android:id="@+id/btnFilmList"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="113dp"
+        android:layout_height="99dp"
         android:text="Film List"
         android:background="@android:color/holo_blue_dark"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="@+id/btnGallery"
-        app:layout_constraintRight_toRightOf="@+id/btnSunshadeOrder"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="@+id/btnSunshadeOrder"
-        app:layout_constraintTop_toTopOf="@+id/btnGallery" />
+        android:layout_marginEnd="19dp"
+        tools:layout_editor_absoluteY="38dp"
+        tools:layout_editor_absoluteX="55dp" />
 
     <Button
-        android:id="@+id/btnSunshadeOrder"
-        android:layout_width="159dp"
-        android:layout_height="0dp"
+        android:id="@+id/btnTimer"
+        android:layout_width="116dp"
+        android:layout_height="101dp"
         android:background="@android:color/holo_blue_dark"
-        android:text="Sunshade Order Form"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        android:layout_marginStart="98dp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnEmail"
-        tools:layout_constraintLeft_creator="1"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnEmail"
-        android:layout_marginLeft="98dp" />
+        android:text="Download Logo"
+        tools:layout_editor_absoluteY="38dp"
+        tools:layout_editor_absoluteX="402dp" />
 
     <Button
         android:id="@+id/btnEmail"
-        android:layout_width="159dp"
-        android:layout_height="143dp"
+        android:layout_width="115dp"
+        android:layout_height="101dp"
         android:background="@android:color/holo_blue_dark"
         android:text="Send us an Email!"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="127dp"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_marginBottom="16dp"
-        android:layout_marginRight="127dp" />
+        android:layout_marginEnd="30dp"
+        tools:layout_editor_absoluteY="153dp"
+        tools:layout_editor_absoluteX="145dp" />
 
     <Button
         android:id="@+id/btnGallery"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="114dp"
+        android:layout_height="99dp"
         android:background="@android:color/holo_blue_dark"
         android:text="Residential Gallery"
-        tools:layout_constraintTop_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintBottom_creator="1"
-        app:layout_constraintBottom_toTopOf="@+id/btnEmail"
-        app:layout_constraintRight_toRightOf="@+id/btnEmail"
-        android:layout_marginTop="26dp"
-        tools:layout_constraintLeft_creator="1"
-        android:layout_marginBottom="30dp"
-        app:layout_constraintLeft_toLeftOf="@+id/btnEmail"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginEnd="37dp"
+        tools:layout_editor_absoluteY="38dp"
+        tools:layout_editor_absoluteX="228dp" />
+
+    <Button
+        android:id="@+id/btnBacktoLogin"
+        android:layout_width="565dp"
+        android:layout_height="77dp"
+        android:text="Back to Login"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        tools:layout_editor_absoluteY="270dp"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/btnFindUs"
+        android:layout_width="111dp"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_height="100dp"
+        android:text="Find Us!"
+        tools:layout_editor_absoluteY="153dp"
+        tools:layout_editor_absoluteX="317dp" />
 
 
 </android.support.constraint.ConstraintLayout>
