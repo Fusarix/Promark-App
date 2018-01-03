@@ -11,14 +11,20 @@
 
     <Button
         android:id="@+id/btnRS20"
-        android:layout_width="100dp"
-        android:layout_height="87dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:text="RS-20"
         android:background="@android:color/holo_blue_dark"
-        android:layout_marginStart="61dp"
-        android:layout_marginEnd="62dp"
-        tools:layout_editor_absoluteY="60dp"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/btnSB20"
+        app:layout_constraintRight_toRightOf="@+id/btnSB20"
+        android:layout_marginTop="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintLeft_toLeftOf="@+id/btnSB20" />
 
     <Button
         android:id="@+id/btnSB20"
@@ -26,28 +32,44 @@
         android:layout_height="82dp"
         android:background="@android:color/holo_blue_dark"
         android:text="SB-20"
-        tools:layout_editor_absoluteY="162dp"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/btnCL800"
+        android:layout_marginStart="16dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp" />
 
     <Button
         android:id="@+id/btnCL800"
-        android:layout_width="101dp"
+        android:layout_width="0dp"
         android:layout_height="83dp"
         android:background="@android:color/holo_blue_dark"
         android:text="CL-800"
-        tools:layout_editor_absoluteY="260dp"
-        tools:layout_editor_absoluteX="16dp" />
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/btnSB20"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintLeft_toLeftOf="@+id/btnSB20" />
 
     <Button
         android:id="@+id/btnBack"
         android:layout_width="210dp"
-        android:layout_height="75dp"
+        android:layout_height="0dp"
         android:text="Back to Main"
         android:background="@android:color/holo_blue_dark"
-        android:layout_marginStart="23dp"
-        android:layout_marginEnd="23dp"
-        tools:layout_editor_absoluteY="162dp"
-        tools:layout_editor_absoluteX="322dp" />
+        android:layout_marginEnd="60dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="60dp" />
 
     <TextView
         android:id="@+id/textView9"
@@ -56,33 +78,57 @@
         android:textAlignment="center"
         android:textSize="50px"
         android:text="Select a film to view specifications"
-        android:layout_marginStart="2dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:layout_editor_absoluteX="106dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="0dp"
-        android:layout_height="93dp"
+        android:layout_height="0dp"
         app:srcCompat="@drawable/rs20"
-        tools:layout_editor_absoluteY="54dp"
-        tools:layout_editor_absoluteX="167dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintRight_toRightOf="@+id/imageView5"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView5" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="84dp"
         android:layout_height="74dp"
         app:srcCompat="@drawable/sb20"
-        tools:layout_editor_absoluteY="162dp"
-        tools:layout_editor_absoluteX="167dp" />
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        android:layout_marginStart="50dp"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintLeft_toRightOf="@+id/btnSB20"
+        android:layout_marginLeft="50dp" />
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="84dp"
-        android:layout_height="80dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:srcCompat="@drawable/cl800"
-        android:layout_marginEnd="49dp"
-        tools:layout_editor_absoluteY="253dp"
-        tools:layout_editor_absoluteX="167dp" />
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCL800"
+        app:layout_constraintRight_toRightOf="@+id/imageView5"
+        android:layout_marginTop="9dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnSB20"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintLeft_toLeftOf="@+id/imageView5" />
 
 </android.support.constraint.ConstraintLayout>
