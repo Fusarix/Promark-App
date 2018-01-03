@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "729932817865",
+    "firebase_url": "https://promarkapplication.firebaseio.com",
+    "project_id": "promarkapplication",
+    "storage_bucket": "promarkapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729932817865:android:2796aa623a603f0a",
+        "android_client_info": {
+          "package_name": "derek.promarkapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "729932817865-467ps8v0aajekhkl2g42t2og1v43t096.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0vMjNbhJDefQyMuQHHWGHM0Q4zAdYybc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
